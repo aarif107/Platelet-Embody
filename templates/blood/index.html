@@ -1,0 +1,176 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <style>
+
+        .xyz{
+            margin-bottom: 0px;
+            background-image: url('{% static "image/homepage.jpg" %}');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+
+
+
+        .team-boxed {
+    color: #313437;
+    background-color: #0055d5
+}
+
+.team-boxed p {
+    color: #7d8285
+}
+
+.team-boxed h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit
+}
+
+@media (max-width:767px) {
+    .team-boxed h2 {
+        margin-bottom: 25px;
+        padding-top: 25px;
+        font-size: 24px
+    }
+}
+
+.team-boxed .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto
+}
+
+.team-boxed .intro p {
+    margin-bottom: 0
+}
+
+.team-boxed .people {
+    padding: 50px 0
+}
+
+.team-boxed .item {
+    text-align: center
+}
+
+.team-boxed .item .box {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: 10px
+}
+
+.team-boxed .item .name {
+    font-weight: bold;
+    margin-top: 28px;
+    margin-bottom: 8px;
+    color: inherit
+}
+
+.team-boxed .item .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #d0d0d0;
+    letter-spacing: 2px;
+    font-size: 13px
+}
+
+.team-boxed .item .description {
+    font-size: 15px
+}
+
+.team-boxed .item img {
+    max-width: 160px
+}
+
+.team-boxed .social {
+    font-size: 18px;
+    color: #a2a8ae
+}
+
+.team-boxed .social:hover {
+    font-size: 18px;
+    color: #f80808
+}
+
+.team-boxed .social a {
+    color: inherit;
+    margin: 0 10px;
+    display: inline-block;
+    opacity: 0.7;
+    padding: 6px
+}
+
+.team-boxed .social a:hover {
+    opacity: 1
+}
+
+.fa {
+    font-size: 28px
+}
+
+.intro h1 {
+    color: #fff
+}
+
+.intro {
+    margin-top: 23px
+}
+
+.box img {
+    cursor: pointer;
+    width: 9em
+}
+
+    </style>
+</head>
+
+
+<body>
+    {% include "blood/navbar.html" %}
+<br>
+<div class="team-boxed">
+    <div class="container">
+        <div class="intro">
+            <h1 class="text-center">Meet our team</h1>
+        </div>
+        <div class="row people">
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box"><img class="rounded-circle" data-bs-hover-animate="pulse" src="{% static 'image/aarif.jpg' %}">
+                    <h3 class="name">Aarif Hussain</h3>
+                    <p class="text-info">Full Stack Web-Developer</p>
+                    <p class="description"><br>Software Engineer & Competitive programmer. Full Stack Web Developer With Django, React ,AJAX, DRF, & PostgreSQL.<br><br></p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box"><img class="rounded-circle" data-bs-hover-animate="pulse" src="{% static 'image/jannat.jpg' %}">
+                    <h3 class="name">Fatema Tuj Jannat</h3>
+                    <p class="text-info">UI/UX Expert and Graphic Designer</p>
+                    <p class="description"><br>With a focus on research. Trying to develop abilities and learn new tools and technologies in the UI/UX and Graphic Design fields.<br><br></p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box"><img class="rounded-circle" data-bs-hover-animate="pulse" src="{% static 'image/Bitto.jpg' %}">
+                    <h3 class="name">Abu Kowshir Bitto</h3>
+                    <p class="text-info">Data Scientist & Researcher</p>
+                    <p class="description"><br>Focus on modern data science and machine learning research, as well as Django framework.With leadership and communication abilities.<br><br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include "blood/footer.html" %}
+
+</body>
+
+</html>
