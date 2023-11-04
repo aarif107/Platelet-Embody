@@ -86,17 +86,3 @@ Millions of Bangladeshis need platelet donations to survive and fight cancer, ch
 ## Patient Deshnoard
 ![HomePage](https://github.com/arif-gin/Django-Platelet-Embody-Website/blob/master/ScreenShots/Patient/PatientDeshboard.png?raw=true)
 
-## Signup
-![HomePage](https://github.com/arif-gin/Django-Platelet-Embody-Website/blob/master/ScreenShots/Donor/Donor_Signup.png?raw=true)
-
-## Donor Deshboard
-![HomePage](https://github.com/arif-gin/Django-Platelet-Embody-Website/blob/master/ScreenShots/Donor/Donor_Deshboard.png?raw=true)
-
-## Make Platelet Request
-![HomePage](https://github.com/arif-gin/Django-Platelet-Embody-Website/blob/master/ScreenShots/Donor/Make_Platelets_Request.png?raw=true)
-
-## Donation Request History
-![HomePage](https://github.com/arif-gin/Django-Platelet-Embody-Website/blob/master/ScreenShots/Donor/Request_History.png?raw=true)
-
-## Donate Platelet
-![HomePage](https://github.com/arif-gin/Django-Platelet-Embody-Website/blob/master/ScreenShots/Donor/Donate_Platelet.png?raw=true)
