@@ -35,10 +35,10 @@ def patient_signup_view(request):
 def patient_dashboard_view(request):
     patient= models.Patient.objects.get(user_id=request.user.id)
     dict={
-        'requestpending': bmodels.BloodRequest.objects.all().filter(request_by_patient=patient).filter(status='Pending').count(),
-        'requestapproved': bmodels.BloodRequest.objects.all().filter(request_by_patient=patient).filter(status='Approved').count(),
-        'requestmade': bmodels.BloodRequest.objects.all().filter(request_by_patient=patient).count(),
-        'requestrejected': bmodels.BloodRequest.objects.all().filter(request_by_patient=patient).filter(status='Rejected').count(),
+        'requestpending': bmodels.PlateletRequest.objects.all().filter(request_by_patient=patient).filter(status='Pending').count(),
+        'requestapproved': bmodels.PlateletRequest.objects.all().filter(request_by_patient=patient).filter(status='Approved').count(),
+        'requestmade': bmodels.PlateletRequest.objects.all().filter(request_by_patient=patient).count(),
+        'requestrejected': bmodels.PlateletRequest.objects.all().filter(request_by_patient=patient).filter(status='Rejected').count(),
 
     }
 
@@ -59,5 +59,5 @@ def make_request_view(request):
 
 def my_request_view(request):
     patient= models.Patient.objects.get(user_id=request.user.id)
-    platelet_request=bmodels.BloodRequest.objects.all().filter(request_by_patient=patient)
+    platelet_request=bmodels.PlateletRequest.objects.all().filter(request_by_patient=patient)
     return render(request,'patient/my_request.html',{'blood_request':platelet_request})
